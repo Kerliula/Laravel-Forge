@@ -100,16 +100,16 @@ ide-helper:
 # =============================================================================
 
 test:
-	vendor/bin/phpunit --parallel
+	$(COMPOSE) exec app ./vendor/bin/phpunit
 
 test-coverage:
-	XDEBUG_MODE=coverage vendor/bin/phpunit --parallel --coverage-html coverage
+	$(COMPOSE) exec app XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage
 
 test-filter:
-	vendor/bin/phpunit --parallel --filter=$(filter)
+	$(COMPOSE) exec app ./vendor/bin/phpunit --filter=$(filter)
 
 test-suite:
-	vendor/bin/phpunit --parallel --testsuite=$(suite)
+	$(COMPOSE) exec app ./vendor/bin/phpunit --testsuite=$(suite)
 
 # =============================================================================
 # Misc

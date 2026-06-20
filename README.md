@@ -34,7 +34,7 @@ Before running `make init`, check the links below for the latest versions and up
 project starts clean.
 
 ```bash
-npx degit your-username/laravel-forge my-project
+npx degit Kerliula/laravel-forge my-project
 cd my-project
 make init
 ```
@@ -42,7 +42,7 @@ make init
 ### Option B — clone and detach
 
 ```bash
-git clone https://github.com/your-username/laravel-forge.git my-project
+git clone https://github.com/Kerliula/laravel-forge.git my-project
 cd my-project
 rm -rf .git
 git init
