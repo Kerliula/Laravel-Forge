@@ -1,0 +1,41 @@
+# Environment
+.env
+src/.env.example
+!src/.env.example
+!.env.testing
+
+# Laravel
+src/_ide_helper.php
+src/.phpstorm.meta.php
+src/vendor/
+src/node_modules/
+src/storage/logs/*.log
+src/public/hot
+src/public/storage
+src/.php-cs-fixer.cache
+src/.php-cs-fixer.dist.php
+
+# Docker
+docker-compose.prod.yml
+*.env.production   # production secrets
+
+
+# Logs
+*.log
+logs/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+.vscode/
+
+# PHP
+*.cache
+cookies.txt
+
+# Testing
+src/.phpunit.result.cache
+src/coverage/
